@@ -1,5 +1,28 @@
-
+prefix: my_prefix
 commands:
   test:
-    description: test
-    call: test
+    description: Example call
+    call: exampleCommand
+    arguments:
+      action:
+        description: Some action definition
+      optional:
+        description: Some optional second argument
+        optional: true
+        default: none
+      files:
+        description: List of files, multiple can be given
+        multiple: true
+        optional: true
+    options:
+      int:
+        short_name: -i
+        action: StoreInt
+        default: -1
+      do:
+        long_name: --do
+        action: StoreTrue
+      string:
+        short_name: -s
+        long_name: --string
+        default: none
