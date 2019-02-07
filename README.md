@@ -1,2 +1,4 @@
-# kehikko
-Base project for simple kehikko v2 system
+
+# Kehikko
+
+Base project for kehikko v2 system.

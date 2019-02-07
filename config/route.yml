@@ -1,0 +1,5 @@
+
+index:
+  pattern: /
+  # call: Example\Controller@index
+  content: Just installed this

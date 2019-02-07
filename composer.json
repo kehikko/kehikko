@@ -1,5 +1,11 @@
 {
-    "require": {
-        "kehikko/kernel": "dev-master"
-    }
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "kehikko/kernel": "dev-master",
+    "kehikko/http": "dev-master"
+  },
+  "config": {
+    "bin-dir": "./"
+  }
 }
