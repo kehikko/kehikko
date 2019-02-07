@@ -1,4 +1,7 @@
 {
+  "name": "kehikko/kehikko",
+  "description": "Base kehikko system with http routing enabled",
+  "license": "MIT",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
