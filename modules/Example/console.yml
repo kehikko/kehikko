@@ -1,0 +1,8 @@
+
+commands:
+  callme:
+    description: Maybe you will be called after executing this
+    call: Example\Model@callMeMaybe
+    arguments:
+      number:
+        description: Your number

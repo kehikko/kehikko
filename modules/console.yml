@@ -1,5 +1,8 @@
+
 prefix: my_prefix
+
 commands:
+  # test example call #1
   test:
     description: Example call
     call: exampleCommand
@@ -26,3 +29,11 @@ commands:
         short_name: -s
         long_name: --string
         default: none
+  # test example call #2
+  notsomany:
+    description: Maybe you will be called after executing this
+    call: Example\Model@notSoManyConsoleYmls
+  # test example call #3
+  mycommand:
+    description: My Command
+    call: MyClass@myCommand
