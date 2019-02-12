@@ -1,0 +1,4 @@
+commands:
+  test:
+    description: Test api
+    call: Test\Api@test

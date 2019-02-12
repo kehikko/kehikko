@@ -1,0 +1,17 @@
+
+api:
+  pattern: /api
+  api:
+    integer:
+      type: int
+      min: 1
+      max: 9
+    type:
+      type: string
+      required:
+        create: false
+        update: true
+      accept:
+        - electrical
+        - oil
+        - gas
