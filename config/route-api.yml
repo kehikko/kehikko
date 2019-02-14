@@ -1,13 +1,24 @@
 
 api:
-  pattern: /api
+  pattern: /api/{o=int,call:Test\Api@,object}/{o2=int,call:Test\Api@,object|o2=call:Test\Api@(8)}
+  # call: o@getId
   api:
-    integer:
+    id1:
       type: int
-      min: 1
-      max: 9
-    type:
+      get: o@getId
+    id2:
       type: string
+      get: o@getOther(o2, 34, 2)
+    integer:
+      type: int|null
+      min: 1
+      max: 9000
+      get: o@getInteger
+      # format: '%6d'
+    type:
+      type: string|null
+      get: o@getType
+      set: o@setType
       required:
         create: false
         update: true
@@ -15,3 +26,11 @@ api:
         - electrical
         - oil
         - gas
+    time:
+      type: datetime
+      timezone: '+0000'
+      format: Y-H:i:s
+      get: o@getTime
+    xxx:
+      type: string
+      required: false
