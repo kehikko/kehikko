@@ -34,3 +34,11 @@ api:
     xxx:
       type: string
       required: false
+    now:
+      type: datetime
+      get: date_create()
+    random:
+      type: string
+      get: rand()
+      format: '0x%08x'
+
