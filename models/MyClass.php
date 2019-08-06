@@ -1,6 +1,6 @@
 <?php
 
-/* Simple example of class without namespace right in the modules root */
+/* Simple example of class without namespace right in the models root */
 
 class MyClass {
     function myCommand()
