@@ -26,6 +26,7 @@ api:
         - electrical
         - oil
         - gas
+        - null
     time:
       type: datetime
       timezone: '+0000'
@@ -38,7 +39,7 @@ api:
       type: datetime
       get: date_create()
     random:
-      type: string
+      type: int
       get: rand()
       format: '0x%08x'
 
