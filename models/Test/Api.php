@@ -6,10 +6,12 @@ class Api
 {
     private $id;
     private $type = null;
+    public $public;
 
     public function __construct($id)
     {
-        $this->id = $id;
+        $this->id     = $id;
+        $this->public = rand();
     }
 
     public function test()

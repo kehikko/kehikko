@@ -1,2 +1,5 @@
 setup:
   debug: true
+
+test:
+  format: '%16x'

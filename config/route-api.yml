@@ -1,6 +1,6 @@
 
 api:
-  pattern: /api/{o=int,call:Test\Api@,object}/{o2=int,call:Test\Api@,object|o2=call:Test\Api@(8)}
+  pattern: /api/%o=int,call:Test\Api@,object%/%o2=int,call:Test\Api@,object|o2=call:Test\Api@(8)%
   # call: o@getId
   api:
     id1:
@@ -41,5 +41,6 @@ api:
     random:
       type: int
       get: rand()
-      format: '0x%08x'
+      format: '{test.format}'
+      #format: '0x%08x'
 
