@@ -7,3 +7,11 @@ index:
 route:
   pattern: /route
   content: Route
+
+subroute1:
+  pattern: /sub/route/1
+  route: routes/sub/route1
+
+subroute2:
+  pattern: /sub/route/2
+  route: '{path.root}/routes/sub/route2'
